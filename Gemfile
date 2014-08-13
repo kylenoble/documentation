@@ -16,6 +16,8 @@ gem "factory_girl_rails", "~> 4.0"
 gem "capybara"
 gem "database_cleaner"
 gem "selenium-webdriver"
+gem 'teaspoon'
+gem 'phantomjs'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
