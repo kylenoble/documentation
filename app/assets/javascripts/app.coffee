@@ -1,4 +1,4 @@
-receta = angular.module('receta',[
+documentation = angular.module('documentation',[
   'templates',
   'ngRoute',
   'ngResource',
@@ -7,7 +7,7 @@ receta = angular.module('receta',[
   'angular-flash.flash-alert-directive'
 ])
 
-receta.config([ '$routeProvider','flashProvider', '$locationProvider' 
+documentation.config([ '$routeProvider','flashProvider', '$locationProvider' 
   ($routeProvider, flashProvider, $locationProvider)->
 
     flashProvider.errorClassnames.push("alert-danger")
@@ -20,15 +20,15 @@ receta.config([ '$routeProvider','flashProvider', '$locationProvider'
       .when('/',
          templateUrl: "index.html"
          controller: 'ItemCtrl'
-      ).when('/recipes/new',
+      ).when('/docs/new',
         templateUrl: "form.html"
-        controller: 'RecipeController'
-       ).when('/recipes/:recipeId',
+        controller: 'DocController'
+       ).when('/docs/:docId',
          templateUrl: "show.html"
-         controller: 'RecipeController'
-      ).when('/recipes/:recipeId/edit',
+         controller: 'DocController'
+      ).when('/docs/:docId/edit',
         templateUrl: "form.html"
-        controller: 'RecipeController'
+        controller: 'DocController'
        )
 
     $locationProvider.html5Mode(true).hashPrefix('!')

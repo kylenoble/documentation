@@ -8,12 +8,12 @@ controllers.controller("ItemCtrl", [ '$scope', '$routeParams', '$location', '$re
 
     idNum = $scope.item.id
 
-    $scope.view = (idNum)-> $location.path("/recipes/#{idNum}")
-    $scope.newRecipe = -> $location.path("/recipes/new")
-    $scope.edit      = (idNum)-> $location.path("/recipes/#{idNum}/edit")
+    $scope.view = (idNum)-> $location.path("/docs/#{idNum}")
+    $scope.newDoc = -> $location.path("/docs/new")
+    $scope.edit      = (idNum)-> $location.path("/docs/#{idNum}/edit")
     $scope.cancel = ->
-      if $scope.recipe.id
-        $location.path("/recipes/#{$scope.recipe.id}")
+      if $scope.doc.id
+        $location.path("/docs/#{$scope.doc.id}")
       else
         $location.path("/")
 

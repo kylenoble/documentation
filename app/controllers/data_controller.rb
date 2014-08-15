@@ -1,5 +1,5 @@
 class DataController < ApplicationController
   def index
-  	@items = Recipe.all
+  	@items = Doc.all
   end
 end

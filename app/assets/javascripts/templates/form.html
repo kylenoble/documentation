@@ -6,25 +6,37 @@
 <form class="form-horizontal" role="form" class="edit-user">
   <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
     <label 
-      for="name" 
+      for="title" 
       class="col-md-2 control-label col-md-offset-2">
-      Name
+      Title
     </label>
     <div class="col-md-5">
-      <input type="text" name="name" class="form-control" placeholder="e.g. Baked Alaska" ng-model="recipe.name">
+      <input type="text" name="title" class="form-control" placeholder="e.g. Add User" ng-model="doc.title">
     </div>
   </div>
   <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
     <label 
-      for="instructions" 
+      for="parent" 
       class="col-md-2 control-label col-md-offset-2">
-      Instructions
+      Header
     </label>
     <div class="col-md-5">
-      <textarea name="instructions" class="form-control" ng-model='recipe.instructions' placeholder="e.g. Flambé for 20 seconds">
+      <textarea name="parent" class="form-control" ng-model='doc.parent' placeholder="e.g. Email, Chat, Social">
       </textarea>
     </div>
   </div>
+  <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
+    <label 
+      for="info" 
+      class="col-md-2 control-label col-md-offset-2">
+      Info
+    </label>
+    <div class="col-md-5">
+      <textarea name="info" class="form-control" ng-model='doc.info' placeholder="e.g. Add a user by click the plus">
+      </textarea>
+    </div>
+  </div>
+
   <div class="form-group">
     <div class="col-md-offset-2 col-md-3">
       <button class="btn btn-default" ng-click="cancel()"> Cancel</button>

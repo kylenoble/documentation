@@ -1,1 +1,0 @@
-json.array! @recipes, :id, :name, :instructions
