@@ -1,6 +1,6 @@
 controllers = angular.module('controllers')
-controllers.controller("RecipesController", [ '$scope', '$routeParams', '$location', '$resource',
-  ($scope,$routeParams,$location,$resource)->
+controllers.controller("RecipesController", [ '$scope', '$routeParams', '$location', '$resource', '$http',
+  ($scope,$routeParams,$location,$resource, $http)->
     $scope.search = (keywords)->  $location.path("/").search('keywords',keywords)
     Recipe = $resource('/recipes/:recipeId', { recipeId: "@id", format: 'json' })
 
@@ -10,4 +10,6 @@ controllers.controller("RecipesController", [ '$scope', '$routeParams', '$locati
       $scope.recipes = []
 
     $scope.view = (recipeId)-> $location.path("/recipes/#{recipeId}")
+    $scope.newRecipe = -> $location.path("/recipes/new")
+    $scope.edit      = (recipeId)-> $location.path("/recipes/#{recipeId}/edit")
 ])
