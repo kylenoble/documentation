@@ -4,6 +4,7 @@ controllers.controller("ItemCtrl", [ '$scope', '$routeParams', '$location', '$re
     $scope.item = []
     $http.get('/data/index.json').success((data)->
       $scope.item = (data)
+      console.log($scope.item)
     )
 
     idNum = $scope.item.id

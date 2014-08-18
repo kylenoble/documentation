@@ -1,0 +1,23 @@
+.search-field {
+	padding-top: 12px;
+}
+
+#search-info {
+	padding-top: 10px;
+	border-bottom: solid 1px #eee;
+	padding-left: 5px;
+	z-index: 1000;
+}
+
+.search-btn, .new-btn {
+	margin-top: 5px;
+}
+
+.sidebar {
+	border-right: 1px solid #eee;
+	position: fixed;
+	display: block;
+	background: #F4F4F4;
+	height: 100%;
+	padding-top: 20px;
+}

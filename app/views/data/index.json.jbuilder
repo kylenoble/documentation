@@ -1,1 +1,30 @@
-json.array! @items, :id, :title, :parent, :info
+x = 0 
+items_length = @items.length
+parent_values = []
+while x < items_length
+	unless parent_values.include? @items[x]["parent"]
+		parent_values.push(@items[x]["parent"])
+	end
+	x += 1
+end
+
+new_items = []
+
+for i in 0..items_length - 1
+	for z in 0..parent_values.length - 1
+		new_items[z] ||= {}
+		if @items[i]["parent"] == parent_values[z]
+			new_items[z]["parent"] = @items[i]["parent"]
+			new_items[z]["helpers"] ||= []
+			new_items[z]["helpers"][i] ||= {}
+			new_items[z]["helpers"][i]["id"] = @items[i]["id"]
+			new_items[z]["helpers"][i]["title"] = @items[i]["title"]
+			new_items[z]["helpers"][i]["info"] = @items[i]["info"]
+			new_items[z]["helpers"].compact!
+		end
+		z += 1
+	end
+	i += 1
+end
+
+json.docs(new_items) 

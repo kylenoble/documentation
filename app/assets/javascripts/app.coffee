@@ -29,7 +29,10 @@ documentation.config([ '$routeProvider','flashProvider', '$locationProvider'
       ).when('/docs/:docId/edit',
         templateUrl: "form.html"
         controller: 'DocController'
-       )
+       ).when('/docs/:docId/new',
+        templateUrl: "form.html"
+        controller: 'DocController'
+      )
 
     $locationProvider.html5Mode(true).hashPrefix('!')
 ])

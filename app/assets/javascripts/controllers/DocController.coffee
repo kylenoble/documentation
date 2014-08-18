@@ -22,6 +22,7 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
     else
       $scope.doc = {}
 
+    $scope.newDocs = -> $location.path("/docs/:docId/new")  
     $scope.back   = -> $location.path("/")
     $scope.edit   = -> $location.path("/docs/#{$scope.doc.id}/edit")
     $scope.cancel = ->

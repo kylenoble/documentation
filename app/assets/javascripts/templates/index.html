@@ -1,41 +1,51 @@
-<header class="row">
-  <h1 class="text-center col-md-6 col-md-offset-3">Find Doc Items</h1>
-</header>
-<section class="row" ng-controller="DocsController">
-  <form>
-    <div class="form-group col-md-6 col-md-offset-3">
-      <label for="keywords" class="sr-only">Keywords</label>
-      <input ng-model="keywords" name="keywords" type="text" autofocus class="form-control" placeholder="Doc keyword, e.g. Email">
-    </div>
-    <div class="form-group col-md-6 col-md-offset-3 text-center">
-      <button ng-click="search(keywords)" class="btn btn-primary btn-lg">Search</button>
-      <button ng-click="newDoc()" class="btn btn-info btn-lg">New Doc</button>
-    </div>
-  </form>
-</section>
-<hr>
-<section class="row" ng-controller="ItemCtrl">
-  <h1 class="text-center h2">Items</h1>
+<div class="row" id="search-info">
+  <section ng-controller="DocsController">
+    <form>
+      <div class="form-group col-md-2 search-field">
+        <label for="keywords" class="sr-only">Keywords</label>
+        <input ng-model="keywords" name="keywords" type="text" autofocus class="form-control" placeholder="Doc Keyword, e.g. Email">
+        <button ng-click="search(keywords)" class="btn btn-primary btn-sm search-btn">Search</button>
+        <button ng-click="newDoc()" class="btn btn-info btn-sm new-btn">New Doc</button>
+      </div>
+    </form>
+  </section>
+  <header id="heading">
+    <h1 class="text-center col-md-5 col-md-offset-2">Decision 7 Documentation</h1>
+  </header>
+</div>
+<section class="col-sm-3 col-md-2 sidebar" ng-controller="ItemCtrl">
   <ul class="list-unstyled">
     <li ng-repeat="items in item">
-      <section class="well col-md-6 col-md-offset-3">
-        <h1 class="h3 col-md-6 text-right" style="margin-top: 0"><a href ng-click="view(items.id)" >{{items.title}}</a></h1>
-        <div class="col-md-6">
-          <button ng-click="edit(items.id)" class="btn btn-info">Edit</button>
-        </div>
-      </section>
+      <h1 class="h4 col-md-6 text-center" style="margin-top: 0">{{items.parent}}</a></h1>
+      {{items}}
+      <li ng-repeat="docitem in items.helpers">
+        {{}}
+        <h1 class="h5 col-md-10 col-md-offset-1 text-center" style="margin-top: 0"><a href ng-click="view(docitem.id)" >{{docitem.title}}</a></h1>
+      </li>
     </li>
   </ul>
 </section>
 <section class="row" ng-controller="DocsController">
-  <h1 class="text-center h2">Results</h1>
   <ul class="list-unstyled">
     <li ng-repeat="doc in docs">
-      <section class="well col-md-6 col-md-offset-3">
-        <h1 class="h3 col-md-6 text-right" style="margin-top: 0"><a href ng-click="view(doc.id)" >{{doc.header}}</a></h1>
-        <div class="col-md-6">
-          <button ng-click="edit(doc.id)" class="btn btn-info">Edit</button>
-        </div>
+      <section class="col-md-6 col-md-offset-4">
+        <article class="panel panel-info">
+          <header class="panel-heading"><h1>{{doc.title}}</h1></header>
+          <p class="panel-body">
+            {{doc.info}}
+          </p>
+        </article>
+        <section>
+          <div class="col-md-3">
+            <button ng-click="back()" class="btn btn-default">
+              &larr; Back
+            </button>
+          </div>
+          <div class="col-md-9 text-right">
+            <button ng-click="edit()" class="btn btn-info"> Edit </button>
+            <button ng-click="delete()" class="btn btn-danger"> Delete </button>
+          </div>
+        </section>
       </section>
     </li>
   </ul>

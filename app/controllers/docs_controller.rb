@@ -3,7 +3,7 @@ class DocsController < ApplicationController
 
   def index
     @docs = if params[:keywords] 
-                  doc.where('name ilike ?',"%#{params[:keywords]}%")
+                  docs.where('title or parent or info ilike ?',"%#{params[:keywords]}%")
                else
                  []
                end

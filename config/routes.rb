@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'docs/index'
-  get '/data/index'
+  get 'data/index'
 
   root 'home#index'
   
