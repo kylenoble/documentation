@@ -15,12 +15,12 @@ for i in 0..items_length - 1
 		new_items[z] ||= {}
 		if @items[i]["parent"] == parent_values[z]
 			new_items[z]["parent"] = @items[i]["parent"]
-			new_items[z]["helpers"] ||= []
-			new_items[z]["helpers"][i] ||= {}
-			new_items[z]["helpers"][i]["id"] = @items[i]["id"]
-			new_items[z]["helpers"][i]["title"] = @items[i]["title"]
-			new_items[z]["helpers"][i]["info"] = @items[i]["info"]
-			new_items[z]["helpers"].compact!
+			new_items[z]["details"] ||= []
+			new_items[z]["details"][i] ||= {}
+			new_items[z]["details"][i]["id"] = @items[i]["id"]
+			new_items[z]["details"][i]["title"] = @items[i]["title"]
+			new_items[z]["details"][i]["info"] = @items[i]["info"]
+			new_items[z]["details"].compact!
 		end
 		z += 1
 	end
