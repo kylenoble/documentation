@@ -3,10 +3,12 @@ controllers.controller("DocsController", [ '$scope', '$routeParams', '$location'
   ($scope,$routeParams,$location,$resource, $http)->
     $scope.search = (keywords)->  $location.path("/").search('keywords',keywords)
     Docs = $resource('/docs/:docId', { docId: "@id", format: 'json' })
-
+    
     console.log($routeParams.keywords)
+
     if $routeParams.keywords
       Docs.query(keywords: $routeParams.keywords, (results)-> $scope.docs = results)
+      console.log("true")
     else
       $scope.docs = []
 

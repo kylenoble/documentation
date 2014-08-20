@@ -38,3 +38,4 @@ documentation.config([ '$routeProvider','flashProvider', '$locationProvider'
 ])
 
 controllers = angular.module('controllers',[])
+

@@ -20,6 +20,7 @@ for i in 0..items_length - 1
 			new_items[z]["details"][i]["id"] = @items[i]["id"]
 			new_items[z]["details"][i]["title"] = @items[i]["title"]
 			new_items[z]["details"][i]["info"] = @items[i]["info"]
+			new_items[z]["details"][i]["image"] = @items[i]["image"]
 			new_items[z]["details"].compact!
 		end
 		z += 1
@@ -28,3 +29,4 @@ for i in 0..items_length - 1
 end
 
 json.docs(new_items) 
+json.array(@items)

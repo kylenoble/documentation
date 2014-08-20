@@ -8,9 +8,6 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
       }
     )
 
-    console.log($routeParams.docId)
-    console.log("test")
-
     if $routeParams.docId
       Doc.get({docId: $routeParams.docId},
         ( (doc)-> $scope.doc = doc ),
@@ -20,7 +17,7 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
         )
       )
     else
-      $scope.doc = {}
+      $scope.doc = {}  
 
     $scope.newDocs = -> $location.path("/docs/:docId/new")  
     $scope.back   = -> $location.path("/")

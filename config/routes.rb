@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'docs/index'
   get 'data/index'
-
+  
   root 'home#index'
   
   resources :docs, only: [:index, :show, :create, :update, :destroy]

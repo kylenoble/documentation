@@ -1,1 +1,1 @@
-json.(doc, :id, :title, :parent, :info)
+json.(doc, :id, :title, :parent, :info, :image)

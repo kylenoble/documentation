@@ -3,7 +3,7 @@ class DocsController < ApplicationController
 
   def index
     @docs = if params[:keywords] 
-                  docs.where('title or parent or info ilike ?',"%#{params[:keywords]}%")
+                  Doc.where("title ilike ?", "%#{params[:keywords]}%")
                else
                  []
                end
@@ -16,14 +16,14 @@ class DocsController < ApplicationController
   end
 
   def create
-    @doc = Doc.new(params.require(:doc).permit(:title, :parent, :info))
+    @doc = Doc.new(doc_params)
     @doc.save
     render 'show', status: 201
   end
 
   def update
     doc = Doc.find(params[:id])
-    doc.update_attributes(params.require(:doc).permit(:title, :parent, :info))
+    doc.update_attributes(doc_params)
     head :no_content
   end
 
@@ -32,4 +32,12 @@ class DocsController < ApplicationController
     doc.destroy
     head :no_content
   end
+
+  private
+    # Using a private method to encapsulate the permissible parameters is just a good pattern
+    # since you'll be able to reuse the same permit list between create and update. Also, you
+    # can specialize this method with per-user checking of permissible attributes.
+    def doc_params
+      params.require(:doc).permit(:title, :parent, :info, :image)
+    end
 end

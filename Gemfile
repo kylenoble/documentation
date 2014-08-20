@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'angular-rails-templates'
+gem "paperclip", "~> 4.1"
 
 gem "foreman"
 group :production, :staging do
