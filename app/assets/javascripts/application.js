@@ -10,13 +10,15 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require lodash
 //= require jquery
 //= require jquery_ujs
 //= require angular/angular
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require angular-flash/dist/angular-flash
-//
+
+//= require restangular
 //= require angular-rails-templates
 //
 // Templates in app/assets/javascript/templates

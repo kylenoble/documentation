@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'angular-rails-templates'
 gem "paperclip", "~> 4.1"
+gem 'lodash-rails'
 
 gem "foreman"
 group :production, :staging do

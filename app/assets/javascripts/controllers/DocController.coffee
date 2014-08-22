@@ -1,5 +1,6 @@
 controllers = angular.module('controllers')
-controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash',
+
+controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', 
   ($scope,$routeParams,$resource,$location, flash)->
     Doc = $resource('/docs/:docId', { docId: "@id", format: 'json' },
       {
@@ -18,6 +19,10 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
       )
     else
       $scope.doc = {}  
+
+    $scope.openFileWindow = () ->
+      angular.element( document.querySelector( '#fileUpload' ) ).trigger('click')
+      console.log('triggering click')
 
     $scope.newDocs = -> $location.path("/docs/:docId/new")  
     $scope.back   = -> $location.path("/")
@@ -43,4 +48,6 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
     $scope.delete = ->
       $scope.doc.$delete()
       $scope.back()
+
 ])
+
