@@ -98,10 +98,10 @@ $(document).ready( function() {
       <div class="input-group">
           <span class="input-group-btn">
               <span class="btn btn-primary btn-file">
-                  <input type="file" id="fileUpload" ng-show="false" ng-model='doc.image' upload-image multiple/>
+                  <input type="file" id="fileUpload" ng-model='doc.image' upload-image multiple/>
                   <img ng-src="{{userImageLink}}" ng-click="openFileWindow()" ng-class="{ hidden: !userImageLink}" >
                   <div class="drop-box" ng-click="openFileWindow()" ng-class=" {hidden: userImageLink}">
-                      Click to add an image.
+                      Add Image
                   </div>
               </span>
           </span>

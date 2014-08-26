@@ -1,7 +1,7 @@
 controllers = angular.module('controllers')
 
-controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', 
-  ($scope,$routeParams,$resource,$location, flash)->
+controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', '$sce'
+  ($scope,$routeParams,$resource,$location, flash, $sce)->
     Doc = $resource('/docs/:docId', { docId: "@id", format: 'json' },
       {
         'save':   {method:'PUT'},
@@ -19,6 +19,9 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
       )
     else
       $scope.doc = {}  
+
+    $scope.renderHtml = (html_code) ->
+      return $sce.trustAsHtml(html_code)
 
     $scope.openFileWindow = () ->
       angular.element( document.querySelector( '#fileUpload' ) ).trigger('click')
@@ -48,6 +51,8 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
     $scope.delete = ->
       $scope.doc.$delete()
       $scope.back()
+
+
 
 ])
 

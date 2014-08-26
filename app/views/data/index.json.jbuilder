@@ -10,6 +10,9 @@ end
 
 new_items = []
 
+
+
+
 for i in 0..items_length - 1
 	for z in 0..parent_values.length - 1
 		new_items[z] ||= {}
@@ -20,7 +23,6 @@ for i in 0..items_length - 1
 			new_items[z]["details"][i]["id"] = @items[i]["id"]
 			new_items[z]["details"][i]["title"] = @items[i]["title"]
 			new_items[z]["details"][i]["info"] = @items[i]["info"]
-			new_items[z]["details"][i]["image"] = @items[i]["image"]
 			new_items[z]["details"].compact!
 		end
 		z += 1

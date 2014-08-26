@@ -58,9 +58,7 @@ return {
         $scope.docImageLink = baseUrl + $scope.doc.image_url;
       }), onError);
     } else {
-      Doc.create($scope.doc, (function(newdoc) {
         console.log("create");
-      }), onError);
     }
    };
  }]

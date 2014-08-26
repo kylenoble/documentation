@@ -1,7 +1,8 @@
 asset 'angular-route'
 asset 'angular'
+asset 'angular-sanitize'
 asset 'bootstrap-sass-official'
 asset 'angular-resource'
 asset 'angular-mocks'
 asset 'angular-flash'
-asset 'restangular'
+

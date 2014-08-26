@@ -48,3 +48,8 @@ input[readonly] {
 .form-items {
 	margin-top: 5px;
 }
+
+.inline-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

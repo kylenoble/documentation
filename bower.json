@@ -7,6 +7,6 @@
   "description": "Invoicing application built with Rails and Angular.",
   "license": "MIT",
   "dependencies": {
-    "restangular": "~1.2.2"
+
   }
 }

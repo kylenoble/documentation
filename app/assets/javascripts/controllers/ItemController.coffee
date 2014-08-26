@@ -1,10 +1,13 @@
 controllers = angular.module('controllers')
-controllers.controller("ItemCtrl", [ '$scope', '$routeParams', '$location', '$resource', '$http',
-  ($scope,$routeParams,$location,$resource, $http)->
+controllers.controller("ItemCtrl", [ '$scope', '$routeParams', '$location', '$resource', '$http', '$sce',
+  ($scope,$routeParams,$location,$resource, $http, $sce)->
     $scope.item = []
     $http.get('/data/index.json').success((data)->
       $scope.item = (data)
+      
     )
+
+    $scope.item.info = $sce.trustAsHtml($scope.item.info)
 
     idNum = $scope.item.id
 

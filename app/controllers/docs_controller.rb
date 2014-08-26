@@ -18,9 +18,10 @@ class DocsController < ApplicationController
   def create
     if params[:imageData]
       decode_image
+      @doc = Doc.new(@up)
+    else
+      @doc = Doc.new(params.require(:doc).permit(:id, :title, :parent, :info, :image))
     end
-
-    @doc = Doc.new(@up)
 
     if @doc.save
       render 'show', status: 201
@@ -36,9 +37,11 @@ class DocsController < ApplicationController
 
     if params[:imageData]
       decode_image
+      doc.update_attributes(@up)
+    else
+      doc.update_attributes(params.require(:doc).permit(:id, :title, :parent, :info, :image))
     end
-
-    doc.update_attributes(@up)
+    
 
     head :no_content
 

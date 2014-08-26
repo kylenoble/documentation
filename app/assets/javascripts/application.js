@@ -17,8 +17,7 @@
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require angular-flash/dist/angular-flash
-
-//= require restangular
+//
 //= require angular-rails-templates
 //
 // Templates in app/assets/javascript/templates

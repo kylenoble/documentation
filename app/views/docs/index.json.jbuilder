@@ -1,1 +1,1 @@
-json.array! @docs, partial: 'doc', as :doc
+json.docs(@docs)
