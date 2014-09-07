@@ -5,7 +5,9 @@ documentation = angular.module('documentation',[
   'controllers',
   'angular-flash.service',
   'angular-flash.flash-alert-directive',
-  'fileUpload'
+  'fileUpload',
+  'angular-loading-bar',
+  'angularFileUpload'
 ])
 
 documentation.config([ '$routeProvider','flashProvider', '$locationProvider' 

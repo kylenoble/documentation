@@ -17,6 +17,8 @@
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
 //= require angular-flash/dist/angular-flash
+//= require angular-file-upload/angular-file-upload.js
+//= require angular-loading-bar
 //
 //= require angular-rails-templates
 //

@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 gem 'angular-rails-templates'
 gem "paperclip", "~> 4.1"
 gem 'lodash-rails'
+
+gem 'rails-assets-danialfarid--angular-file-upload'
+gem 'rails-assets-angular-loading-bar'
 
 gem "foreman"
 group :production, :staging do

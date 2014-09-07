@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actionmailer (4.1.1)
       actionpack (= 4.1.1)
@@ -110,6 +111,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.1)
       sprockets-rails (~> 2.0)
+    rails-assets-angular-loading-bar (0.5.2)
+    rails-assets-danialfarid--angular-file-upload (1.6.5)
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
@@ -202,6 +205,8 @@ DEPENDENCIES
   pg
   phantomjs
   rails (= 4.1.1)
+  rails-assets-angular-loading-bar
+  rails-assets-danialfarid--angular-file-upload
   rails_12factor
   rails_serve_static_assets
   rails_stdout_logging

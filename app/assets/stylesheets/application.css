@@ -11,6 +11,8 @@
  * file per style scope.
  *
  *= require bootstrap-sass-official
+ *= require angular-file-upload/demo/war/common.scss
+ *= require angular-loading-bar
  *= require_tree .
  *= require_self
  */

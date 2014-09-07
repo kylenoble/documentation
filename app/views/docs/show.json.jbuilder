@@ -7,5 +7,5 @@ def add_image text, image
 	end
 end
 
-@doc.info = add_image(@doc.info, @doc.image.to_s).join(' ')
+#@doc.info = add_image(@doc.info, @doc.image.to_s).join(' ')
 json.partial! 'doc', doc: @doc
