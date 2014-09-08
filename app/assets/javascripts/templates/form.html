@@ -96,24 +96,13 @@ $(document).ready( function() {
     </label>
     <div class="col-md-5">
       <div class="input-group">
+          <input type="text" class="form-control" readonly>
           <span class="input-group-btn">
               <span class="btn btn-primary btn-file">
-                  <input type="file" class="form-control" id="doc.images" name="doc.images" ng-model='doc.images' upload-image multiple/>
-                  <img ng-src="{{userImageLink}}" ng-click="openFileWindow()" ng-class="{ hidden: !userImageLink}" >
-                  <div class="drop-box" ng-click="openFileWindow()" ng-class=" {hidden: userImageLink}">
-                      Add Image
-                  </div>
+                <input type="file" ng-file-select="onFileSelect($files)" multiple accept="image/*">
+                Attach
               </span>
           </span>
-          <input type="text" class="form-control" readonly>
-          <input type="file" ng-file-select="onFileSelect($files)">
-          <input type="file" ng-file-select="onFileSelect($files)" multiple accept="image/*">
-          <div class="button" ng-file-select="onFileSelect($files)" data-multiple="true"></div>
-          <div ng-file-drop="onFileSelect($files)" ng-file-drag-over-class="optional-css-class-name-or-function"
-                ng-show="dropSupported">drop files here</div>
-          <div ng-file-drop-available="dropSupported=true" 
-                ng-show="!dropSupported">HTML5 Drop File is not supported!</div>
-          <button ng-click="upload.abort()">Cancel Upload</button>
     </div>
   </div>
   <br>

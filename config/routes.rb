@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   
   root 'home#index'
   
-  resources :docs, only: [:index, :show, :create, :update, :destroy]
+  resources :docs, only: [:index, :show, :create, :update, :destroy] do
+    resources :images, only: [:create, :destroy]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -21,7 +23,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  # Example resource route with options:
+  # Example resource route with options: 
   #   resources :products do
   #     member do
   #       get 'short'

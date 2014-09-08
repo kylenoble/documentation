@@ -3,9 +3,9 @@ documentation = angular.module('documentation',[
   'ngRoute',
   'ngResource',
   'controllers',
+  'restangular',
   'angular-flash.service',
   'angular-flash.flash-alert-directive',
-  'fileUpload',
   'angular-loading-bar',
   'angularFileUpload'
 ])
@@ -26,7 +26,7 @@ documentation.config([ '$routeProvider','flashProvider', '$locationProvider'
       ).when('/docs/new',
         templateUrl: "form.html"
         controller: 'DocController'
-       ).when('/docs/:docId',
+      ).when('/docs/:docId',
          templateUrl: "show.html"
          controller: 'DocController'
       ).when('/docs/:docId/edit',

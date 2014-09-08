@@ -1,7 +1,6 @@
 controllers = angular.module('controllers')
-
-controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', '$sce'
-  ($scope,$routeParams,$resource,$location, flash, $sce)->
+controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', '$sce', '$upload'
+  ($scope,$routeParams,$resource,$location, flash, $sce, $upload, Restangular)->
     Doc = $resource('/docs/:docId', { docId: "@id", format: 'json' },
       {
         'save':   {method:'PUT'},
@@ -52,7 +51,69 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
       $scope.doc.$delete()
       $scope.back()
 
+    $scope.onFileSelect = ($files, additionalCallback) ->
+      if angular.isUndefined($scope.doc)
+        $scope.filesToUpload = $files
+        $scope.newDoc($scope.doc, true)  if $scope.canBeCreated
+        return
+      
+      #$files: an array of files selected, each file has name, size, and type.
+      i = 0
 
+      while i < $files.length
+        file = $files[i]
+        $scope.upload = $upload.upload(
+          url: '/docs/' + $scope.doc.id + '/images'  
+          file: file
+        ).progress((evt) ->
+          console.log "percent: " + parseInt(100.0 * evt.loaded / evt.total)
+          return
+        ).success((data, status, headers, config) ->
+          
+          # file is uploaded successfully
+          $scope.doc.images.push data
+          $scope.filesToUpload = _.without($scope.filesToUpload, file)  if angular.isDefined($scope.filesToUpload)
+          #additionalCallback()
+          return
+        )
+        i++
+      return
+
+    $scope.$watch "Form.$valid", (newVal) ->
+      return  if angular.isUndefined(newVal)
+      return  unless newVal
+      return  if angular.isDefined($scope.doc.id)
+      $scope.canBeCreated = true
+      return
+
+    allClear = (response) ->
+      $scope.doc = response
+      console.log(response)
+      unless $scope.fileTagStyle is true
+        $("input[type=file]").bootstrapFileInput()
+        $scope.fileTagStyle = true
+      additionalCallback = additionalCallback () ->
+        if $scope.needToRedirect
+          $window.location.replace "/docs/" + $response.id + '/images'
+          return
+        if $scope.needToReload
+          $window.location.replace "/docs/" + response.id + "/edit"
+          return
+
+      if angular.isDefined($scope.filesToUpload) and $scope.filesToUpload.length > 0
+        $scope.onFileSelect $scope.filesToUpload, additionalCallback
+      else
+        additionalCallback()
+      return
+
+      if angular.isNumber($scope.product.id)
+        Restangular.one("docs", $scope.doc.id).patch(fields).then allClear, (error) ->
+          $scope.errors = error.data
+          return
+      else
+        Restangular.all("docs").post(fields).then allClear, (error) ->
+          $scope.errors = error.data
+          return
 
 ])
 

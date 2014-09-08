@@ -19,6 +19,7 @@
 //= require angular-flash/dist/angular-flash
 //= require angular-file-upload/angular-file-upload.js
 //= require angular-loading-bar
+//= require restangular
 //
 //= require angular-rails-templates
 //
