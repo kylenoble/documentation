@@ -1,6 +1,6 @@
 controllers = angular.module('controllers')
-controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', '$sce', '$upload'
-  ($scope,$routeParams,$resource,$location, flash, $sce, $upload, Restangular)->
+controllers.controller("DocController", [ '$scope', '$routeParams', '$resource', '$location', 'flash', '$sce', '$upload', 'Restangular', '$window'
+  ($scope,$routeParams,$resource,$location, flash, $sce, $upload, Restangular, $window)->
     Doc = $resource('/docs/:docId', { docId: "@id", format: 'json' },
       {
         'save':   {method:'PUT'},
@@ -17,14 +17,11 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
         )
       )
     else
-      $scope.doc = {}  
+      $scope.doc = {}
+      $scope.reload
 
     $scope.renderHtml = (html_code) ->
       return $sce.trustAsHtml(html_code)
-
-    $scope.openFileWindow = () ->
-      angular.element( document.querySelector( '#fileUpload' ) ).trigger('click')
-      console.log('triggering click')
 
     $scope.newDocs = -> $location.path("/docs/:docId/new")  
     $scope.back   = -> $location.path("/")
@@ -34,6 +31,10 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
         $location.path("/docs/#{$scope.doc.id}")
       else
         $location.path("/")
+
+    $scope.delete = ->
+        $scope.doc.$delete()
+        $scope.back()
 
     $scope.save = ->
       onError = (_httpResponse)-> flash.error = "Something went wrong"
@@ -47,14 +48,18 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
           onError
         )
 
-    $scope.delete = ->
-      $scope.doc.$delete()
-      $scope.back()
-
     $scope.onFileSelect = ($files, additionalCallback) ->
-      if angular.isUndefined($scope.doc)
+      additionalCallback = () ->
+        if $scope.needToRedirect
+          $window.location.replace "/docs"
+          return
+        if $scope.needToReload
+          $window.location.replace "/docs/" + response.id + "/edit"
+          return
+
+      if angular.isUndefined($scope.doc.id)
         $scope.filesToUpload = $files
-        $scope.newDoc($scope.doc, true)  if $scope.canBeCreated
+        Doc.create $scope.doc.id, true  if $scope.canBeCreated
         return
       
       #$files: an array of files selected, each file has name, size, and type.
@@ -63,38 +68,37 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
       while i < $files.length
         file = $files[i]
         $scope.upload = $upload.upload(
-          url: '/docs/' + $scope.doc.id + '/images'  
+          url: "/docs/" + $scope.doc.id + "/images"
           file: file
         ).progress((evt) ->
           console.log "percent: " + parseInt(100.0 * evt.loaded / evt.total)
-          return
         ).success((data, status, headers, config) ->
           
           # file is uploaded successfully
           $scope.doc.images.push data
           $scope.filesToUpload = _.without($scope.filesToUpload, file)  if angular.isDefined($scope.filesToUpload)
-          #additionalCallback()
-          return
+          additionalCallback()
         )
         i++
-      return
 
-    $scope.$watch "Form.$valid", (newVal) ->
+    $scope.$watch "docForm.$valid", (newVal) ->
       return  if angular.isUndefined(newVal)
       return  unless newVal
-      return  if angular.isDefined($scope.doc.id)
+      return  if angular.isDefined($routeParams.id)
+
       $scope.canBeCreated = true
-      return
 
     allClear = (response) ->
       $scope.doc = response
-      console.log(response)
+      $scope.doc.images = _.object(_.map(response.images, (images) ->
+        [ images.image, true ]
+      ))
       unless $scope.fileTagStyle is true
         $("input[type=file]").bootstrapFileInput()
         $scope.fileTagStyle = true
-      additionalCallback = additionalCallback () ->
+      additionalCallback = () ->
         if $scope.needToRedirect
-          $window.location.replace "/docs/" + $response.id + '/images'
+          $window.location.replace "/docs"
           return
         if $scope.needToReload
           $window.location.replace "/docs/" + response.id + "/edit"
@@ -104,16 +108,15 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
         $scope.onFileSelect $scope.filesToUpload, additionalCallback
       else
         additionalCallback()
-      return
 
-      if angular.isNumber($scope.product.id)
-        Restangular.one("docs", $scope.doc.id).patch(fields).then allClear, (error) ->
-          $scope.errors = error.data
-          return
-      else
-        Restangular.all("docs").post(fields).then allClear, (error) ->
-          $scope.errors = error.data
-          return
 
+    if $routeParams.docId > 0
+      console.log("working")
+    else
+      onError = (_httpResponse)-> flash.error = "Something went wrong"
+      Doc.create({"title":"", "parent":"", "info":""},
+          ( (newdoc)-> $location.path("/docs/#{newdoc.id}/edit") ),
+          onError
+        )
 ])
 

@@ -1,13 +1,17 @@
 class DocsController < ApplicationController
   skip_before_filter :verify_authenticity_token
+  before_action :load
+
+  def load
+    @doc = Doc.new
+    @docs = if params[:keywords] 
+              Doc.where("title ilike ?", "%#{params[:keywords]}%")
+           else
+             []
+           end
+  end
 
   def index
-    @docs = if params[:keywords] 
-                  Doc.where("title ilike ?", "%#{params[:keywords]}%")
-               else
-                 []
-               end
-
     @items = Doc.all
   end
 

@@ -5,7 +5,7 @@ class ImagesController < ApplicationController
   def create
     @img = @doc.images.build(image: params[:file])
     if @img.save
-    	render json: @img, status: 201
+    	render json: @img
     else
       render json: @img.errors, status: :unprocessable_entity
     end
@@ -18,7 +18,7 @@ class ImagesController < ApplicationController
 
   private
 	def find_doc
-	  @doc = Doc.find(params[:doc_id])
+    @doc = Doc.find(params[:doc_id])
 	end
 end
 

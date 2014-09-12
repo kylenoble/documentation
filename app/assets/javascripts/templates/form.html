@@ -22,44 +22,47 @@ $(document).ready( function() {
     });
 });
 </script>
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="row" id="search-info">
+    <section ng-controller="DocsController">
+      <form>
+        <div class="form-group col-md-2 search-field">
+          <label for="keywords" class="sr-only">Keywords</label>
+          <input ng-model="keywords" name="keywords" type="text" autofocus class="form-control" placeholder="Doc Keyword, e.g. Email">
+          <button ng-click="search(keywords)" class="btn btn-primary btn-sm search-btn">Search</button>
+          <button ng-click="newDoc()" class="btn btn-info btn-sm new-btn">New Doc</button>
+        </div>
+      </form>
+    </section>
+    <header id="heading">
+      <h1 class="text-center col-md-5 col-md-offset-2">Decision 7 Documentation</h1>
+    </header>
+  </div>
+</nav>
+<div id="wrapper">
+  <section class="col-sm-3 col-md-2" id="sidebar-wrapper" ng-controller="ItemCtrl">
+    <ul class="list-unstyled sidebar-nav">
+      <li ng-repeat="items in item.docs">
+        <h1 class="h4 col-md-6 text-center parent-item">{{items.parent}}</a></h1>
+        <ul class="list-unstyled">
+          <li ng-repeat="detail in items.details">
+            <h1 class="h5 col-md-10 text-center" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</div>
 <aside class="flash row">
-  <article flash-alert duration="0" active-class="alert" class="col-md-6 col-md-offset-3">
+  <article flash-alert duration="0" active-class="alert" class="col-md-6 col-md-offset-3 col-sm-12">
     {{flash.message}}
   </article>
 </aside>
-<div class="row" id="search-info">
-  <section ng-controller="DocsController">
-    <form>
-      <div class="form-group col-md-2 search-field">
-        <label for="keywords" class="sr-only">Keywords</label>
-        <input ng-model="keywords" name="keywords" type="text" autofocus class="form-control" placeholder="Doc Keyword, e.g. Email">
-        <button ng-click="search(keywords)" class="btn btn-primary btn-sm search-btn">Search</button>
-        <button ng-click="newDoc()" class="btn btn-info btn-sm new-btn">New Doc</button>
-      </div>
-    </form>
-  </section>
-  <header id="heading">
-    <h1 class="text-center col-md-5 col-md-offset-2">Decision 7 Documentation</h1>
-  </header>
-</div>
-<section class="col-sm-3 col-md-2 sidebar" ng-controller="ItemCtrl">
-  <ul class="list-unstyled">
-    <li ng-repeat="items in item.docs">
-      <h1 class="h4 col-md-6 text-center" style="margin-top: 0">{{items.parent}}</a></h1>
-      <ul class="list-unstyled">
-        <li ng-repeat="detail in items.details">
-          <h1 class="h5 col-md-10 col-md-offset-1 text-center" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</section>
-<br>
-<form class="form-horizontal" role="form" class="edit-user">
+<form class="form-horizontal" role="form" class="edit-user" name="docForm">
   <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
     <label 
       for="title" 
-      class="col-md-2 control-label col-md-offset-2">
+      class="col-md-3 control-label col-md-offset-2">
       Title
     </label>
     <div class="col-md-5">
@@ -69,7 +72,7 @@ $(document).ready( function() {
   <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
     <label 
       for="parent" 
-      class="col-md-2 control-label col-md-offset-2">
+      class="col-md-3 control-label col-md-offset-2">
       Header
     </label>
     <div class="col-md-5">
@@ -80,18 +83,18 @@ $(document).ready( function() {
   <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
     <label 
       for="info" 
-      class="col-md-2 control-label col-md-offset-2">
+      class="col-md-3 control-label col-md-offset-2">
       Info
     </label>
     <div class="col-md-5">
-      <textarea name="info" class="form-control" ng-model='doc.info' placeholder="e.g. Add a user by click the plus">
+      <textarea name="info" class="form-control" id="form-info" ng-model='doc.info' placeholder="e.g. Add a user by click the plus">
       </textarea>
     </div>
   </div>
     <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
     <label
       for="info" 
-      class="col-md-2 control-label col-md-offset-2">
+      class="col-md-3 control-label col-md-offset-2">
       Attachment
     </label>
     <div class="col-md-5">
@@ -110,7 +113,7 @@ $(document).ready( function() {
     <div class="col-md-offset-7 col-sm-1">
       <button class="btn btn-default form-items" ng-click="cancel()"> Cancel</button>
     </div>
-    <div class="col-sm-1 text-right">
+    <div class="col-sm-1 col-md-offset-1 text-right">
       <button class="btn btn-primary form-items" ng-click="save()"> Save </button>
     </div>
   </div>

@@ -31,4 +31,4 @@ for i in 0..items_length - 1
 end
 
 json.docs(new_items) 
-json.array(@items)
+
