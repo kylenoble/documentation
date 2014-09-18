@@ -1,0 +1,46 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand brand-image" href="/"><%= image_tag "d7logo.jpg" %></a>
+    <h2 class="navbar-text">Decision 7 Documentation</h2>
+    <button ng-click="newDoc()" class="navbar-right btn btn-info btn-md new-btn">New Doc</button>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div class="container-fluid">
+    <div id="wrapper">
+      <section class="col-sm-3 col-md-2" id="sidebar-wrapper" ng-controller="ItemCtrl">
+        <ul class="list-unstyled sidebar-nav">
+          <li ng-repeat="items in item.docs | orderBy:'parent'">
+            <h1 class="h4 col-md-2 text-center parent-item">{{items.parent}}</a></h1>
+            <ul class="list-unstyled">
+              <li ng-repeat="detail in items.details | orderBy:'title'">
+                <h1 class="h5 col-md-12 col-md-offset-2 text-left" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+<section ng-controller="DocsController" class="col-md-6 col-md-offset-4">
+  <form>
+    <div class="form-group col-md-12 search-field">
+      <label for="keywords" class="sr-only">Keywords</label>
+      <input ng-model="keywords" name="keywords" type="text" autofocus class="form-control search-area" placeholder="Doc Keyword, e.g. Email">
+      <button ng-click="search(keywords)" class="col-md-2 col-md-offset-5 btn btn-primary btn-md search-btn">Search</button>
+    </div>
+  </form>
+  <section class="row" ng-if="docs">
+    <ul class="list-unstyled">
+      <li ng-repeat="doc in docs">
+        <section class="col-md-12">
+          <div class="col-md-12 info-search" ng-click="view(doc.id)">
+            <h2>{{doc.title}}</h2>
+          </div>
+        </section>
+      </li>
+    </ul>
+  </section>
+</section>

@@ -1,4 +1,5 @@
 Rails.application.config.assets.precompile += %w( 
+  application.css
   teaspoon.css
   teaspoon-teaspoon.js
   teaspoon-jasmine.js

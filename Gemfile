@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 gem 'angular-rails-templates'
 gem "paperclip", "~> 4.1"
 gem 'lodash-rails'

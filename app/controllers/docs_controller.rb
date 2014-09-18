@@ -4,8 +4,9 @@ class DocsController < ApplicationController
 
   def load
     @doc = Doc.new
-    @docs = if params[:keywords] 
-              Doc.where("title ilike ?", "%#{params[:keywords]}%")
+    search_term = params[:keywords]
+    @docs = if search_term
+              Doc.search search_term.strip
            else
              []
            end

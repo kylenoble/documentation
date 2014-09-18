@@ -18,7 +18,9 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
       )
     else
       $scope.doc = {}
-      $scope.reload
+
+
+    console.log($scope.doc)
 
     $scope.renderHtml = (html_code) ->
       return $sce.trustAsHtml(html_code)
@@ -28,7 +30,11 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
     $scope.edit   = -> $location.path("/docs/#{$scope.doc.id}/edit")
     $scope.cancel = ->
       if $scope.doc.id
-        $location.path("/docs/#{$scope.doc.id}")
+        if $scope.doc.parent == '' && $scope.doc.info == '' && $scope.doc.title == ''
+          $scope.doc.$delete()
+          $location.path("/")
+        else
+          $location.path("/docs/#{$scope.doc.id}")
       else
         $location.path("/")
 
@@ -108,7 +114,6 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
         $scope.onFileSelect $scope.filesToUpload, additionalCallback
       else
         additionalCallback()
-
 
     if $routeParams.docId > 0
       console.log("working")

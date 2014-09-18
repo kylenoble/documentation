@@ -1,22 +1,30 @@
-body { padding-top: 104px; }
-
-.search-field {
-	padding-top: 12px;
-}
-
-#search-info {
-	padding-top: 10px;
-	border-bottom: solid 1px #eee;
-	padding-left: 5px;
-	z-index: 1000;
-}
-
-.search-btn, .new-btn {
-	margin-top: 5px;
-}
-
 .navbar {
-  background: #fff;
+  background: #47537F;
+  z-index: 1000;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 0px !important;
+}
+
+.brand-image a {
+  width: 20px;
+}
+
+.navbar-text {
+    top: -4.5px;
+    position: absolute;
+    width: 80%;
+    left: 8.8%;
+    text-align: center;
+    color: white !important;
+}
+
+.new-btn {
+  margin-top: 7px;
+}
+
+.content {
+  position: relative;
 }
 
 #wrapper {
@@ -32,11 +40,12 @@ body { padding-top: 104px; }
 }
 
 #sidebar-wrapper {
-    z-index: 1000;
+    top: 50px;
+    z-index: 999;
     border-right: 1px solid #eee;
     background: #F4F4F4;
-    position: fixed;
-    left: 250px;
+    position: absolute;
+    left: 200px;
     width: 0;
     height: 100%;
     margin-left: -250px;
@@ -46,10 +55,11 @@ body { padding-top: 104px; }
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    padding-right: 0px;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 200px;
 }
 
 #page-content-wrapper {
@@ -59,22 +69,23 @@ body { padding-top: 104px; }
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -200px;
 }
 
 /* Sidebar Styles */
 
 .sidebar-nav {
+    margin-top: 30px;
     position: absolute;
-    top: 0;
-    width: 250px;
+    top: 0px;
+    width: 200px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
+    text-indent: 30%;
     line-height: 40px;
 }
 
@@ -112,6 +123,7 @@ body { padding-top: 104px; }
 .parent-item {
   color: ##2F575D;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .btn-file {
@@ -139,23 +151,82 @@ input[readonly] {
 
 #doc-info {
   margin-bottom: 10px;
+  position: relative;
+  float: right;
 }
 
 #info-head {
-  padding-left: 37%;
-  margin-bottom: 5%;
+  margin-top: -8%;
+  margin-bottom: 3%;
+  text-align: center;
+  margin-left: -16px;
 }
 
 #info-text {
-  margin-left: 10%;
+  text-align: justify;
+  margin-left: -15px;
+  margin-bottom: 15px;
 }
 
-#doc-buttons {
-  margin-left: 20%
+.back-button {
+  margin-top: 8%;
+  display: relative;
+  float: left;
+}
+
+.search-field {
+  margin-top: 30%;
+  height: 20px;
+  margin-bottom: 10%;
+  margin-left: -8px;
+}
+
+.search-btn {
+  margin-top: 15px;
+  left: 1.25px;
+}
+
+.new-btn {
+  margin-top: 7px;
+}
+
+.search-area {
+  padding: 20px; 
+  margin-bottom: 5px;
+  color: black !important;
+}
+
+.info-search {
+  margin-left: -7px;
+  padding: 5px;
+  margin-top: 5%;
+  border: solid 2px #eee;
+  border-radius: 10px;
+}
+
+.info-search:hover {
+  background-color: #428bca;
+  color: white;
+}
+
+.info-search:hover h2 {
+  color:white;
+}
+
+.info-search h2 {
+  color: #428bca;
+  margin-top: 1.5%;
+  text-align: center;
+  margin-left: -4px;
+}
+
+.doc-buttons {
+  margin-top: 5%;
+  margin-left: 8%;
 }
 
 .form-horizontal {
-	margin-top: 20px;
+	margin-top: 80px;
   overflow-x: hidden;
 }
 
@@ -165,13 +236,13 @@ input[readonly] {
 
 .form-items {
   margin-top: 20px;
+  overflow-x: hidden; 
 }
 
 .inline-image {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 30%;
-  alignment-adjust: center;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  margin: 0 auto;
 }
 
 @media(min-width:768px) {

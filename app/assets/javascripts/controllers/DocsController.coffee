@@ -2,11 +2,10 @@ controllers = angular.module('controllers')
 controllers.controller("DocsController", [ '$scope', '$routeParams', '$location', '$resource', '$http',
   ($scope,$routeParams,$location,$resource, $http)->
     $scope.search = (keywords)->  $location.path("/").search('keywords',keywords)
-    Docs = $resource('/docs/:docId', { docId: "@id", format: 'json' })
+    Docs = $resource('/docs/:docId', { docId: "@id", format: 'json'})
     
     if $routeParams.keywords
       Docs.query(keywords: $routeParams.keywords, (results)-> $scope.docs = results)
-      console.log("true")
     else
       $scope.docs = []
 

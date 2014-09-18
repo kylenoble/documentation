@@ -1,0 +1,121 @@
+<script type="text/javascript">
+$(document).on('change', '.btn-file :file', function() {
+  var input = $(this),
+      numFiles = input.get(0).files ? input.get(0).files.length : 1,
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+      console.log(label);
+  input.trigger('fileselect', [numFiles, label]);
+});
+
+$(document).ready( function() {
+    $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = numFiles > 1 ? numFiles + ' files selected' : label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+        
+    });
+});
+</script>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/"><%= image_tag "d7logo.jpg" %></a>
+    <h2 class="navbar-text">Decision 7 Documentation</h2>
+    <button ng-click="newDoc()" class="navbar-right btn btn-info btn-md new-btn">New Doc</button>
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row">
+  <div class="container-fluid">
+    <div id="wrapper">
+      <section class="col-sm-3 col-md-2" id="sidebar-wrapper" ng-controller="ItemCtrl">
+        <ul class="list-unstyled sidebar-nav">
+          <li ng-repeat="items in item.docs | orderBy:'parent'">
+            <h1 class="h4 col-md-2 text-center parent-item">{{items.parent}}</a></h1>
+            <ul class="list-unstyled">
+              <li ng-repeat="detail in items.details | orderBy:'title'">
+                <h1 class="h5 col-md-12 col-md-offset-2 text-left" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+<aside class="flash row">
+  <article flash-alert duration="0" active-class="alert" class="col-md-6 col-md-offset-3 col-sm-12">
+    {{flash.message}}
+  </article>
+</aside>
+<div class="col-md-9 col-md-offset-2 doc-form">
+  <div class="row">
+    <div class="container-fluid">
+      <form class="form-horizontal" role="form" class="edit-user" name="docForm">
+        <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
+          <label 
+            for="title" 
+            class="col-md-3 control-label">
+            Title
+          </label>
+          <div class="col-md-8">
+            <input type="text" name="title" class="form-control" placeholder="e.g. Add User" ng-model="doc.title">
+          </div>
+        </div>
+        <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
+          <label 
+            for="parent" 
+            class="col-md-3 control-label">
+            Header
+          </label>
+          <div class="col-md-8">
+            <textarea name="parent" class="form-control" ng-model='doc.parent' placeholder="e.g. Email, Chat, Social">
+            </textarea>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
+          <label 
+            for="info" 
+            class="col-md-3 control-label">
+            Info
+          </label>
+          <div class="col-md-8">
+            <textarea name="info" class="form-control" id="form-info" ng-model='doc.info' placeholder="e.g. Add a user by click the plus">
+            </textarea>
+          </div>
+        </div>
+          <div class="form-group" ng-class="{'has-warning has-feedback':errors.name}">
+          <label
+            for="info" 
+            class="col-md-3 control-label">
+            Attachment
+          </label>
+          <div class="col-md-8">
+            <div class="input-group">
+                <input type="text" class="form-control" readonly>
+                <span class="input-group-btn">
+                    <span class="btn btn-primary btn-file">
+                      <input type="file" ng-file-select="onFileSelect($files)" multiple accept="image/*">
+                      Attach
+                    </span>
+                </span>
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <div class="col-md-offset-4 col-sm-1">
+            <button class="btn btn-default form-items" ng-click="cancel()"> Cancel</button>
+          </div>
+          <div class="col-sm-1 col-md-offset-1 text-right">
+            <button class="btn btn-primary form-items" ng-click="save()"> Save </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
