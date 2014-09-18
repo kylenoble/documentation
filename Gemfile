@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org'
 
+gem 'bcrypt'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'angular-rails-templates'
