@@ -6,9 +6,10 @@
   margin-bottom: 0px !important;
 }
 
-.brand-image a {
-  width: 20px;
+.navbar-brand {
+  color: white !important;
 }
+
 
 .navbar-text {
     top: -4.5px;
@@ -244,6 +245,34 @@ input[readonly] {
   margin-bottom: 20px !important;
   margin: 0 auto;
 }
+
+.new-user-header {
+  color: black;
+  margin-top: 80px;
+}
+
+.user-form {
+  margin-top: 20px;
+  overflow-x: hidden;
+}
+
+.user-form-item {
+  margin-bottom: 20px;
+}
+
+#error_explanation {
+  color: red;
+}
+
+#error_explanation ul {
+    color: red;
+    margin: 0 0 30px 0;
+}
+
+.field_with_errors {
+  color: red;
+}
+
 
 @media(min-width:768px) {
     #wrapper {

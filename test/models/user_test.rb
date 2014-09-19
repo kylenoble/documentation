@@ -27,8 +27,8 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email validation should accept valid addresses" do
-    valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
-                         first.last@foo.jp alice+bob@baz.cn]
+    valid_addresses = %w[user@ignitemedia.com USER@ignitemedia.com A_US-ER@ignitemedia.com
+                         first.last@ignitemedia.com alice+bob@ignitemedia.com]
     valid_addresses.each do |valid_address|
       @user.email = valid_address
       assert @user.valid?
@@ -37,7 +37,8 @@ class UserTest < ActiveSupport::TestCase
 
   test "email validation should reject invalid addresses" do
     invalid_addresses = %w[user@example,com user_at_foo.org user.name@example.
-                           foo@bar_baz.com foo@bar+baz.com]
+                           foo@bar_baz.com foo@bar+baz.com user@gmail.com user@yahoo.com
+                           user@outlook.com user@example.com user@me.com user@icloud.com]
     invalid_addresses.each do |invalid_address|
       @user.email = invalid_address
       assert_not @user.valid?
@@ -59,5 +60,13 @@ class UserTest < ActiveSupport::TestCase
   test "admin_key should be equal to secret key" do
     @user.admin_key = "secret"
     assert @user.valid?
+  end
+
+  test "admin_key validation should reject invalid keys" do
+    invalid_keys = %w[test pass champ secre]
+    invalid_keys.each do |invalid_key|
+      @user.admin_key = invalid_key
+      assert_not @user.valid?
+    end
   end
 end
