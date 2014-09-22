@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
     has_secure_password
     validates :password, length: { minimum: 6 }
 
-	validates :admin_key, inclusion: { in: %w(secret) }
+	validates :admin_key, inclusion: { in: %w(secret), message: "The key is incorrect" }
 end

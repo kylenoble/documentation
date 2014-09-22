@@ -7,6 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/">Home</a>
+    <h3 class="navbar-text">Decision 7 Documentation</h2>
+    <% if logged_in? %>
+      <%= link_to "Logout", logout_path, method: "delete", class: "navbar-right btn btn-info btn-md login-btn" %>
+      <%= javascript_tag do %>
+        window.token = 1
+      <% end %>
+    <% else %>
+      <a href="/login"><button class="navbar-right btn btn-info btn-md login-btn">Login</button></a>
+      <%= javascript_tag do %>
+        window.token = 0
+      <% end %>
+    <% end %>
+  </div><!-- /.container-fluid -->
+</nav>
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %> flash-message"><%= message %></div>
+<% end %>
 
 <%= yield %>
 

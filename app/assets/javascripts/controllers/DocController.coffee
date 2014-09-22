@@ -19,8 +19,8 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
     else
       $scope.doc = {}
 
-
     console.log($scope.doc)
+    console.log("This is the scope: " + $scope.user)
 
     $scope.renderHtml = (html_code) ->
       return $sce.trustAsHtml(html_code)
@@ -94,6 +94,8 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
 
       $scope.canBeCreated = true
 
+    return $scope.token = $window.token
+
     allClear = (response) ->
       $scope.doc = response
       $scope.doc.images = _.object(_.map(response.images, (images) ->
@@ -123,5 +125,6 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
           ( (newdoc)-> $location.path("/docs/#{newdoc.id}/edit") ),
           onError
         )
+
 ])
 

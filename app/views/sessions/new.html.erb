@@ -1,0 +1,31 @@
+<h2 class="col-md-12 login-header text-center">Log in</h2>
+<div class="col-md-5 user-back-button">
+  <a href="/"><button class="btn btn-default">
+    &larr; Back
+  </button></a>
+</div>
+<div class="col-md-8 col-md-offset-2 user-form">
+  <div class="row">
+    <div class="container-fluid">
+		<form accept-charset="UTF-8" action="/sessions" method="post" class="form-horizontal">
+		  <div style="display:none">
+		    <input name="utf8" type="hidden" value="&#x2713;" />
+		    <input name="authenticity_token" type="hidden"
+		           value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+		  </div>
+		  <div>
+		    <label for="session_email">Email</label>
+		    <input id="session_email" name="session[email]" type="text" class="user-form-item col-md-4 form-control" />
+		  </div>
+		  <div>
+		    <label for="session_password">Password</label>
+		    <input id="session_password" name="session[password]"
+		           type="password" class="user-form-item col-md-4 form-control" />
+		  </div>
+		  <input class="btn btn-primary col-md-12" name="commit" type="submit"
+		       value="Log in" />
+		</form>
+		</div>
+	</div>
+</div>
+<h4 class="col-md-12 login-header text-center"><a href="/users/new">New User? Signup Here</a></h4>
