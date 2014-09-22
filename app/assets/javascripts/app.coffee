@@ -10,19 +10,23 @@ documentation = angular.module('documentation',[
   'angularFileUpload'
 ])
 
-documentation.config([ '$routeProvider','flashProvider', '$locationProvider' 
-  ($routeProvider, flashProvider, $locationProvider)->
+documentation.config([ '$routeProvider','flashProvider', '$locationProvider', '$provide' 
+  ($routeProvider, flashProvider, $locationProvider, $provide)->
 
     flashProvider.errorClassnames.push("alert-danger")
     flashProvider.warnClassnames.push("alert-warning")
     flashProvider.infoClassnames.push("alert-info")
     flashProvider.successClassnames.push("alert-success")
 
-
     $routeProvider
       .when('/',
          templateUrl: "index.html"
          controller: 'ItemCtrl'
+         redirectTo: (current, path, search) ->
+          if search.goto
+            return "/" + search.goto
+          else
+            return "/"
       ).when('/docs/new',
         templateUrl: "form.html"
         controller: 'DocController'
@@ -37,7 +41,9 @@ documentation.config([ '$routeProvider','flashProvider', '$locationProvider'
         controller: 'DocController'
       )
 
-    $locationProvider.html5Mode(true).hashPrefix('!')
+    $locationProvider
+      .html5Mode(false)
+      .hashPrefix('!')
 ])
 
 controllers = angular.module('controllers',[])

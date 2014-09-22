@@ -5,14 +5,15 @@ Rails.application.routes.draw do
   get 'signup'  => 'users#new'
   get    'login'    => 'sessions#new'
   delete 'logout'   => 'sessions#destroy'
-
-  root 'home#index'
   
   resources :docs, only: [:index, :show, :create, :update, :destroy] do
     resources :images, only: [:create, :destroy]
   end
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+
+  match "/*path" => redirect("/?goto=%{path}"), :via => [:get]
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

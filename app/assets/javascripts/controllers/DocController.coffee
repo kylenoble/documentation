@@ -94,8 +94,6 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
 
       $scope.canBeCreated = true
 
-    return $scope.token = $window.token
-
     allClear = (response) ->
       $scope.doc = response
       $scope.doc.images = _.object(_.map(response.images, (images) ->
@@ -125,6 +123,7 @@ controllers.controller("DocController", [ '$scope', '$routeParams', '$resource',
           ( (newdoc)-> $location.path("/docs/#{newdoc.id}/edit") ),
           onError
         )
-
+      
+    return $scope.token = $window.token
 ])
 
