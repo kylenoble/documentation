@@ -22,11 +22,6 @@ documentation.config([ '$routeProvider','flashProvider', '$locationProvider', '$
       .when('/',
          templateUrl: "index.html"
          controller: 'ItemCtrl'
-         redirectTo: (current, path, search) ->
-          if search.goto
-            return "/" + search.goto
-          else
-            return "/"
       ).when('/docs/new',
         templateUrl: "form.html"
         controller: 'DocController'
