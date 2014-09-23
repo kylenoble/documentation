@@ -228,6 +228,7 @@ input[readonly] {
     margin: 0;
     padding: 0;
     list-style: none;
+    height: 100%;
 }
 
 .sidebar-nav li {
@@ -271,7 +272,7 @@ input[readonly] {
     z-index: 999;
     border-right: 1px solid #eee;
     background: #F4F4F4;
-    position: absolute;
+    position: fixed;
     left: 200px;
     width: 0;
     height: 100%;

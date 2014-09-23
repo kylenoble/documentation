@@ -10548,3 +10548,3038 @@ Processing by DataController#index as JSON
   [1m[35mDoc Load (1.4ms)[0m  SELECT "docs".* FROM "docs"
   Rendered data/index.json.jbuilder (2.7ms)
 Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:50:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 395ms (Views: 391.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.9ms)[0m  [1mSELECT  "docs".* FROM "docs"   ORDER BY "docs"."id" ASC LIMIT 1000[0m
+  [1m[35mDoc Load (5.0ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (8.2ms)
+Completed 200 OK in 57ms (Views: 8.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:00 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:51:02 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.6ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.3ms)
+  Rendered docs/show.json.jbuilder (43.8ms)
+Completed 200 OK in 50ms (Views: 44.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:02 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:10 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:10 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:42 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:51:44 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (1.4ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.9ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:44 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (4.7ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (7.9ms)
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:48 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:48 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.2ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:51:49 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:52:03 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:52:07 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:52:08 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.3ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:52:08 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.7ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.2ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:52:10 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.2ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:52:10 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.6ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:54:36 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:54 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:54:55 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:54:55 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:54:57 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:55:07 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:55:17 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:56:06 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:07 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:56:08 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (0.4ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.8ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:08 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.7ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.7ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:11 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.7ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:11 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:12 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.6ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:56:13 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (1.0ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (1.0ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.2ms)
+  Rendered docs/show.json.jbuilder (5.5ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:13 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:14 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:14 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.6ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:54 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.5ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:56:57 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (0.5ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.6ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:56:57 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:00 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (2.1ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (3.4ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:00 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:09 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:57:12 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (0.2ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (0.4ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (3.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:12 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.7ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:13 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.2ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:13 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.9ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.6ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docs/89?format=json" for 127.0.0.1 at 2014-09-22 20:57:14 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"89"}
+  [1m[35mDoc Load (0.3ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 89]]
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 89]]
+  [1m[35mImage Load (0.4ms)[0m  SELECT "images".* FROM "images"  WHERE "images"."doc_id" = $1  [["doc_id", 89]]
+/system/images/10/original/Screen_Shot_2014-02-10_at_3.24.02_PM.png?1411414449
+/system/images/11/original/Screen_Shot_2014-02-10_at_3.17.49_PM.png?1411414449
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (20.9ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:14 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (1.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.1ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:16 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (8.6ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:16 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (1.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 20:57:17 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.7ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (1.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (4.0ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:17 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.6ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (3.1ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:18 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 20:57:18 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (2.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (3.7ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:00:33 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:00:38 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.2ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.5ms)
+  Rendered docs/show.json.jbuilder (3.4ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:00:38 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (1.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.8ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:00:40 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:00:40 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 21:00:45 -0400
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:01:16 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (0.2ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.7ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:01:16 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (1.0ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.1ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 21:02:22 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (0.2ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (0.3ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.5ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:02:23 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:04:39 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.7ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.2ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:04:39 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.6ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:04:46 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.3ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.1ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:04:46 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.8ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:04:52 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:04:53 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (1.6ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (3.1ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 21:05:03 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:03 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:04 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:04 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.8ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:05:07 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.3ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:07 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.2ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:52 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:54 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:54 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:05:56 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[36mDoc Load (0.2ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 92]]
+  [1m[35mImage Exists (0.2ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:56 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.7ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:57 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:05:57 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/89?format=json" for 127.0.0.1 at 2014-09-22 21:06:00 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"89"}
+  [1m[35mDoc Load (0.6ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 89]]
+  [1m[36mImage Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 89]]
+  [1m[35mImage Load (1.1ms)[0m  SELECT "images".* FROM "images"  WHERE "images"."doc_id" = $1  [["doc_id", 89]]
+/system/images/10/original/Screen_Shot_2014-02-10_at_3.24.02_PM.png?1411414449
+/system/images/11/original/Screen_Shot_2014-02-10_at_3.17.49_PM.png?1411414449
+  Rendered docs/_doc.json.jbuilder (0.2ms)
+  Rendered docs/show.json.jbuilder (9.9ms)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:00 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.6ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:02 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:02 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.9ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/docs/33?format=json" for 127.0.0.1 at 2014-09-22 21:06:02 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"33"}
+  [1m[35mDoc Load (0.3ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 33]]
+  [1m[36mImage Exists (3.5ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 33]]
+  [1m[35mImage Load (0.4ms)[0m  SELECT "images".* FROM "images"  WHERE "images"."doc_id" = $1  [["doc_id", 33]]
+/system/images/3/original/Screen_Shot_2014-02-10_at_3.24.02_PM.png?1410891696
+/system/images/4/original/Screen_Shot_2014-02-10_at_3.17.49_PM.png?1410891696
+  Rendered docs/_doc.json.jbuilder (0.2ms)
+  Rendered docs/show.json.jbuilder (10.6ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:02 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (2.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.9ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:03 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.1ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:03 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/92?format=json" for 127.0.0.1 at 2014-09-22 21:06:07 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"92"}
+  [1m[35mDoc Load (0.5ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 92]]
+  [1m[36mImage Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 92]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (4.2ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:07 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:09 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (1.9ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:09 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/docs?format=json" for 127.0.0.1 at 2014-09-22 21:06:41 -0400
+Processing by DocsController#create as JSON
+  Parameters: {"title"=>"", "parent"=>"", "info"=>"", "doc"=>{"title"=>"", "parent"=>"", "info"=>""}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "docs" ("created_at", "info", "parent", "title", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-23 01:06:41.539137"], ["info", ""], ["parent", ""], ["title", ""], ["updated_at", "2014-09-23 01:06:41.539137"]]
+  [1m[36m (64.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mImage Exists (0.2ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.9ms)
+Completed 201 Created in 86ms (Views: 4.1ms | ActiveRecord: 65.9ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:41 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:06:41 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[35mDoc Load (0.3ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 93]]
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.0ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:41 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.4ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:06:51 -0400
+Processing by DocsController#update as JSON
+  Parameters: {"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante.", "doc"=>{"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."}}
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (5.1ms)[0m  [1mUPDATE "docs" SET "info" = $1, "parent" = $2, "title" = $3, "updated_at" = $4 WHERE "docs"."id" = 93[0m  [["info", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."], ["parent", "Email"], ["title", "Add email Skill"], ["updated_at", "2014-09-23 01:06:51.516113"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 27ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:06:51 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35mImage Exists (0.4ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.2ms)
+  Rendered docs/show.json.jbuilder (3.4ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:51 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:06:56 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[35mDoc Load (2.9ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 93]]
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (3.0ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:06:56 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.8ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:07:13 -0400
+Processing by DocsController#update as JSON
+  Parameters: {"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante.", "doc"=>{"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."}}
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mUPDATE "docs" SET "info" = $1, "updated_at" = $2 WHERE "docs"."id" = 93[0m  [["info", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."], ["updated_at", "2014-09-23 01:07:13.290201"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Completed 204 No Content in 24ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:07:13 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35mImage Exists (2.9ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (5.2ms)
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:07:13 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (1.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.7ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:07:25 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (1.2ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (3.9ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:07:25 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.6ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 21:07:39 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sass-official/assets/stylesheets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-file-upload/demo/war/common.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/data.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-loading-bar.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/doc_images.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-resource/angular-resource.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-file-upload/angular-file-upload.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/lodash/lodash.compat.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/lodash.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-route/angular-route.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-flash/dist/angular-flash.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-loading-bar/loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-loading-bar.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/templates/show.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/templates/form.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/controllers/DocController.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/controllers/ItemController.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/restangular/restangular.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/templates/index.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/controllers/DocsController.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/data.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/doc_images.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (3.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:07:42 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.5ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.5ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:07:44 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[35mDoc Load (0.2ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 93]]
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.2ms)
+  Rendered docs/show.json.jbuilder (3.9ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:07:44 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.3ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.3ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:21 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35mImage Exists (0.3ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (2.8ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:08:21 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (0.4ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (2.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:23 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[35mDoc Load (2.4ms)[0m  SELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1  [["id", 93]]
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1[0m  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (1.8ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:08:23 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (2.8ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:30 -0400
+Processing by DocsController#update as JSON
+  Parameters: {"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n<br>\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante.", "doc"=>{"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n<br>\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."}}
+  [1m[36mDoc Load (0.2ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "docs" SET "info" = $1, "updated_at" = $2 WHERE "docs"."id" = 93[0m  [["info", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n<br>\n\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."], ["updated_at", "2014-09-23 01:08:30.189363"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 17ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:30 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[36mDoc Load (1.3ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35mImage Exists (0.6ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (3.6ms)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:08:30 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (2.1ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (5.0ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:08:37 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.4ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.5ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:37 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[36mDoc Load (0.2ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35mImage Exists (0.7ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (3.6ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:40 -0400
+Processing by DocsController#update as JSON
+  Parameters: {"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n<br>\n<br>\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante.", "doc"=>{"id"=>"93", "title"=>"Add email Skill", "parent"=>"Email", "info"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n<br>\n<br>\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."}}
+  [1m[36mDoc Load (1.2ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mUPDATE "docs" SET "info" = $1, "updated_at" = $2 WHERE "docs"."id" = 93[0m  [["info", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum lectus quis purus convallis pharetra. Proin elementum tempus arcu, ac sodales elit vestibulum ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, odio ut auctor molestie, justo neque viverra est, vitae posuere mi mi a leo. Pellentesque ultricies, felis non tincidunt fringilla, neque libero dictum tortor, nec placerat lectus neque nec urna. Vestibulum risus velit, vulputate sit amet ligula sed, hendrerit rutrum diam. Sed eu nunc mauris. Suspendisse ac ante dignissim, consequat tortor vitae, volutpat urna. Ut ultrices facilisis sollicitudin. Nam at feugiat turpis. Nunc ornare nisi at sagittis finibus. Etiam a nisi magna. Curabitur ut mollis neque.\n<br>\n<br>\nDuis consequat nec orci a maximus. Fusce nec neque tincidunt, pretium sem et, rhoncus est. Quisque turpis elit, ultricies quis convallis nec, efficitur id felis. Proin tempor suscipit orci vitae ullamcorper. Nulla facilisi. Mauris pulvinar at nisl quis viverra. Morbi in velit posuere sem dapibus feugiat. Nunc venenatis bibendum velit, a bibendum purus. Proin imperdiet, justo et egestas scelerisque, tortor nulla lobortis risus, in finibus tellus diam quis risus. Ut id fringilla arcu. Vestibulum id ex vel diam imperdiet tempor ut vel lacus.\n\n\nCurabitur eget mattis elit. Donec dolor sem, bibendum at luctus non, volutpat sit amet tortor. Nullam iaculis, metus et congue commodo, risus enim congue ex, in feugiat dui diam id neque. Mauris porttitor placerat iaculis. Sed efficitur semper congue. Etiam ac erat semper, efficitur lorem eu, egestas ex. Curabitur vitae dapibus enim. Etiam laoreet auctor mauris, vitae cursus dui consequat sit amet. Quisque ut ultricies ipsum. Nunc et consectetur enim.\n\n\nNam euismod bibendum porttitor. Nam tortor eros, rutrum et tellus sit amet, semper laoreet diam. Praesent at urna aliquam, mattis lacus vel, fringilla eros. Pellentesque eget pulvinar arcu. Morbi nunc risus, viverra sit amet commodo ut, auctor sed tellus. Etiam bibendum sodales suscipit. Nulla eget neque ante. Fusce accumsan ipsum diam, eget porta mauris feugiat vitae. Phasellus lectus orci, lobortis id vulputate eu, ultricies id tellus. Integer pellentesque ex sed hendrerit suscipit. Proin vel vulputate nisi. Suspendisse potenti. Morbi eleifend sapien dui, ac ultrices massa euismod vel. Curabitur egestas lacus pretium, vehicula nibh quis, aliquam urna.\n\n\nEtiam porttitor mi nulla, vitae imperdiet lacus eleifend a. Aliquam elementum, diam et ultricies facilisis, purus sapien convallis magna, eu rhoncus ante purus ut arcu. Nunc sit amet elit sed eros dictum tristique non sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget dignissim mauris, ut faucibus tellus. Maecenas finibus egestas justo non dapibus. Vivamus fringilla condimentum porta. Nunc varius, magna a vulputate scelerisque, est augue finibus elit, et tincidunt justo sem lacinia lorem. Nunc vel commodo velit. Nunc ultrices id ipsum eu bibendum.\n\n\nMorbi nec convallis eros. Proin varius erat at sodales dapibus. Cras posuere facilisis felis, nec scelerisque neque. Phasellus gravida mauris id congue sollicitudin. Pellentesque et pulvinar enim, quis lacinia nisi. Nulla a arcu eget massa dictum ultrices. In efficitur felis velit, vel interdum quam rutrum ut. Donec facilisis vel arcu at molestie.\n\n\nInteger et pretium augue. Nunc eleifend fermentum enim, vitae faucibus nibh egestas vel. Phasellus posuere viverra ipsum nec ultricies. Sed lorem sem, tincidunt sed metus vel, venenatis aliquet ex. Donec ullamcorper pulvinar nisi, nec bibendum ante porttitor vel. Praesent rhoncus tortor mi. Donec vulputate magna blandit nisl scelerisque porta. Integer pharetra purus at odio laoreet, a ultricies metus vestibulum. Vestibulum sit amet faucibus ante."], ["updated_at", "2014-09-23 01:08:40.758379"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 29ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/docs/93?format=json" for 127.0.0.1 at 2014-09-22 21:08:40 -0400
+Processing by DocsController#show as JSON
+  Parameters: {"id"=>"93"}
+  [1m[36mDoc Load (0.3ms)[0m  [1mSELECT  "docs".* FROM "docs"  WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 93]]
+  [1m[35mImage Exists (0.4ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."doc_id" = $1 LIMIT 1  [["doc_id", 93]]
+  Rendered docs/_doc.json.jbuilder (0.1ms)
+  Rendered docs/show.json.jbuilder (4.4ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:08:40 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (9.1ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (11.0ms)
+Completed 200 OK in 19ms (Views: 9.7ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:09:08 -0400
+Processing by DataController#index as JSON
+  [1m[35mDoc Load (0.5ms)[0m  SELECT "docs".* FROM "docs"
+  Rendered data/index.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/data/index.json" for 127.0.0.1 at 2014-09-22 21:09:08 -0400
+Processing by DataController#index as JSON
+  [1m[36mDoc Load (1.3ms)[0m  [1mSELECT "docs".* FROM "docs"[0m
+  Rendered data/index.json.jbuilder (3.3ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.3ms)
