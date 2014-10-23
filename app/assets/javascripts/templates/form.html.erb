@@ -28,10 +28,10 @@ $(document).ready( function() {
       <section class="col-sm-3 col-md-2" id="sidebar-wrapper" ng-controller="ItemCtrl">
         <ul class="list-unstyled sidebar-nav">
           <li ng-repeat="items in item.docs | orderBy:'parent'">
-            <h1 class="h4 col-md-2 text-center parent-item">{{items.parent}}</a></h1>
+            <h1 class="h4 col-md-2 text-center parent-item" ng-click="showDetails = ! showDetails">{{items.parent}}</a></h1>
             <ul class="list-unstyled">
               <li ng-repeat="detail in items.details | orderBy:'title'">
-                <h1 class="h5 col-md-12 col-md-offset-2 text-left" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
+                <h1 class="h5 col-md-12 col-md-offset-2 text-left" ng-show="showDetails" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
               </li>
             </ul>
           </li>

@@ -5,6 +5,10 @@
   position: fixed;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 .btn-file {
   position: relative;
   overflow: hidden;
@@ -80,6 +84,33 @@
   overflow-x: hidden; 
 }
 
+#hamburger {
+  border: 1px solid #374C77;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+  display: none;
+  height: 25px;
+  padding: 3px 4px 3px;
+  position: relative;
+  width: 30px;
+  margin-top: 12px;
+  margin-right: 10px;
+  background: #fff;
+}
+
+/*
+The white stripes in the hamburger button
+*/
+#hamburger div {
+    background-color: #47537F;
+    border: 1px solid #47537F;
+    border-radius: 2px 2px 2px 2px;
+    height: 2px;
+    margin-top: 3px;
+    margin-left: 1px;
+    width: 90%;
+}
+
 #info-head {
   margin-top: -8%;
   margin-bottom: 3%;
@@ -93,10 +124,11 @@
   margin-top: 5%;
   border: solid 2px #eee;
   border-radius: 10px;
+  text-align: center;
 }
 
 .info-search:hover {
-  background-color: #428bca;
+  background-color: #47537F;
   color: white;
 }
 
@@ -105,7 +137,7 @@
 }
 
 .info-search h2 {
-  color: #428bca;
+  color: #47537F;
   margin-top: 1.5%;
   text-align: center;
   margin-left: -4px;
@@ -127,6 +159,21 @@ input[readonly] {
   background-color: white !important;
   cursor: text !important;
 }
+
+.intro {
+  margin-top: 100px;
+}
+
+.intro h1 {
+  margin-bottom: 3%;
+}
+
+.intro h1, h5 {
+  text-align: center;
+  color: #47537F;
+  margin-right: 5%;
+}
+
 
 .login-btn {
   margin-top: 7px;
@@ -161,13 +208,13 @@ input[readonly] {
 
 .navbar-brand {
   color: white !important;
+  position: absolute;
 }
 
 .navbar-text {
-    top: -4.5px;
+    display: inline-block;
     position: absolute;
-    width: 25%;
-    left: 36.5%;
+    left: 40.5%;
     text-align: center;
     color: white !important;
 }
@@ -189,15 +236,36 @@ input[readonly] {
   margin-top: 80px;
 }
 
+.no-info-search {
+  margin-left: -7px;
+  padding: 5px;
+  margin-top: 5%;
+}
+
+.no-info-search h2 {
+  color: #47537F;
+  margin-top: 1.5%;
+  text-align: center;
+  margin-left: -4px;
+}
+
 #page-content-wrapper {
     width: 100%;
     padding: 15px;
 }
 
 .parent-item {
-  color: #2F575D;
+  color: #5D75CB;
   margin-top: 20px;
   margin-bottom: 15px;
+  margin-left: 35%;
+  width: 100%;
+  text-align: left;
+}
+
+.parent-item:hover {
+  text-decoration: none;
+  color: rgba(93,117,203, 0.6);
 }
 
 .search-area {
@@ -209,13 +277,15 @@ input[readonly] {
 .search-btn {
   margin-top: 15px;
   left: 1.25px;
+  margin-bottom: 10px;
+  background-color: #47537F;
 }
 
 .search-field {
-  margin-top: 30%;
+  margin-top: 10%;
   height: 20px;
   margin-bottom: 10%;
-  margin-left: -8px;
+  margin-left: -4.5%;
 }
 
 /* Sidebar Styles */
@@ -223,7 +293,7 @@ input[readonly] {
 .sidebar-nav {
     margin-top: 30px;
     position: absolute;
-    top: 0px;
+    top: 10px;
     width: 200px;
     margin: 0;
     padding: 0;
@@ -232,7 +302,6 @@ input[readonly] {
 }
 
 .sidebar-nav li {
-    text-indent: 30%;
     line-height: 40px;
 }
 
@@ -240,6 +309,7 @@ input[readonly] {
     display: block;
     text-decoration: none;
     color: #5F5E66;
+    margin-left: 35%;
 }
 
 .sidebar-nav li a:hover {
@@ -277,13 +347,19 @@ input[readonly] {
     width: 0;
     height: 100%;
     margin-left: -250px;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden; 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     padding-right: 0px;
+}
+
+.text-left a {
+  width: 60%;
+  text-align: left;
+  margin-left: 0;
 }
 
 .user-form {
@@ -327,7 +403,33 @@ input[readonly] {
     margin-right: -200px;
 }
 
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  #doc-info {
+    margin-top: 15%;
+    float: none;
+    margin-left: 25%;
+  }
+
+  .search-field {
+    margin-left: -4px; 
+  }
+}
+
+@media(max-width: 992px) {
+  .search-results {
+    margin-top: 80px !important;
+  }
+
+  .search-body {
+    left: 5%;
+  }
+}
+
 @media(min-width:768px) {
+   #page-content-wrapper {
+        padding: 20px;
+    }
+
     #wrapper {
         padding-left: 250px;
     }
@@ -344,12 +446,61 @@ input[readonly] {
         width: 0;
     }
 
-    #page-content-wrapper {
-        padding: 20px;
-    }
-
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
     }
+}
+
+@media(max-width:768px) {
+  #doc-info {
+    margin-top: 15%;
+    float: none;
+  }
+
+  #doc-info span {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #hamburger {
+    display: inline-block; 
+  }
+
+  .info-text {
+    margin-left: 0%;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .navbar-brand {
+    font-size:1em;
+    left: 15%;
+  }
+
+  .navbar-text {
+    top: 3px;
+    font-size:1em;
+    left: 45%;
+  }
+
+  .search-body {
+    margin-right: 9%;
+  }
+
+  .search-results {
+    margin-top: 80px !important;
+  }
+
+  .sidebar-nav li a {
+    margin-left: 55%;
+  }
+}
+
+@media(max-width: 600px) {
+  #doc-info {
+    margin-top: 20%;
+  }
 }

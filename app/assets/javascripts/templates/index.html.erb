@@ -1,13 +1,13 @@
-<div class="row">
+<div class="row" class="mobileNav">
   <div class="container-fluid">
     <div id="wrapper">
       <section class="col-sm-3 col-md-2" id="sidebar-wrapper" ng-controller="ItemCtrl">
         <ul class="list-unstyled sidebar-nav">
           <li ng-repeat="items in item.docs | orderBy:'parent'">
-            <h1 class="h4 col-md-2 text-center parent-item">{{items.parent}}</a></h1>
+            <h1 class="h4 col-md-2 text-center parent-item" ng-click="showDetails = ! showDetails">{{items.parent}}</a></h1>
             <ul class="list-unstyled">
               <li ng-repeat="detail in items.details | orderBy:'title'">
-                <h1 class="h5 col-md-12 col-md-offset-2 text-left" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
+                <h1 class="h5 col-md-12 col-md-offset-2 text-left" ng-show="showDetails" style="margin-top: 0"><a href ng-click="view(detail.id)" >{{detail.title}}</a></h1>
               </li>
             </ul>
           </li>
@@ -19,20 +19,30 @@
     </div>
   </div>
 </div>
-<section ng-controller="DocsController" class="col-md-6 col-md-offset-4">
+<section ng-controller="DocsController" class="col-sm-6 col-sm-offset-4 search-body">
+  <div class="intro">
+    <h1>Welcome to Decision 7 Support</h1>
+    <h5>Get Started by searching for a keyword or clicking one of the options on the left to see a list of documentation items.</h5>
+  </div>
   <form>
-    <div class="form-group col-md-12 search-field">
-      <label for="keywords" class="sr-only">Keywords</label>
+    <div class="form-group col-sm-14 col-sm-offset-8 search-field">
       <input ng-model="keywords" name="keywords" type="text" autofocus class="form-control search-area" placeholder="Doc Keyword, e.g. Email">
-      <button ng-click="search(keywords)" class="col-md-2 col-md-offset-5 btn btn-primary btn-md search-btn">Search</button>
+      <button ng-click="search(keywords)" class="col-sm-2 col-sm-offset-5 btn btn-primary btn-md search-btn">Search</button>
     </div>
   </form>
-  <section class="row" ng-if="docs">
+  <section class="row" ng-if="searchResults == 0">
+    <section class="col-md-12">
+      <div class="col-md-12 no-info-search">
+        <h2>None Found</h2>
+      </div>
+    </section>
+  </section>
+  <section class="row search-results" ng-if="docs">
     <ul class="list-unstyled">
-      <li ng-repeat="doc in docs">
+      <li ng-repeat="doc in docs | limitTo: 5">
         <section class="col-md-12">
-          <div class="col-md-12 info-search" ng-click="view(doc.id)">
-            <h2>{{doc.title}}</h2>
+          <div class="info-search" ng-click="view(doc.id)">
+            <h4>{{doc.title}}</h4>
           </div>
         </section>
       </li>

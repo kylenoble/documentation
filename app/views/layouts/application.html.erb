@@ -3,6 +3,7 @@
 <head>
   <base href="/">
   <title>D7 Documentation</title>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,19 +12,24 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand" href="/">Home</a>
-    <h3 class="navbar-text">Decision 7 Documentation</h2>
-    <% if logged_in? %>
-      <%= link_to "Logout", logout_path, method: "delete", class: "navbar-right btn btn-info btn-md login-btn" %>
-      <%= javascript_tag do %>
-        window.token = 1
+      <div id="hamburger" class="col-md-1 navbar-left">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <a class="navbar-brand navbar-left" href="/">Home</a>
+      <h4 class="navbar-text">Decision 7 Documentation</h4>
+      <% if logged_in? %>
+        <%= link_to "Logout", logout_path, method: "delete", class: "navbar-right btn btn-info btn-md login-btn" %>
+        <%= javascript_tag do %>
+          window.token = 1
+        <% end %>
+      <% else %>
+        <a href="/login"><button class="navbar-right btn btn-info btn-md login-btn">Login</button></a>
+        <%= javascript_tag do %>
+          window.token = 0
+        <% end %>
       <% end %>
-    <% else %>
-      <a href="/login"><button class="navbar-right btn btn-info btn-md login-btn">Login</button></a>
-      <%= javascript_tag do %>
-        window.token = 0
-      <% end %>
-    <% end %>
   </div><!-- /.container-fluid -->
 </nav>
 <% flash.each do |message_type, message| %>
@@ -31,6 +37,17 @@
 <% end %>
 
 <%= yield %>
-
+<script type="text/javascript">
+var x = 0;
+$("#hamburger").on("click", function() {
+  if (x == 0)  {
+    $("#sidebar-wrapper").css("width", "250px");
+    x += 1;
+  } else {
+    $("#sidebar-wrapper").css("width", "0px");
+    x -= 1;
+  }
+});
+</script>
 </body>
 </html>
