@@ -34,7 +34,7 @@ Rails.application.configure do
 
   Paperclip.options[:command_path] = "/usr/local/bin/convert"
   unless Rails.env.production?
-    ENV['admin_key'] = "secret"
+    ENV["SECRET_PASS"] = "secret"
   end
 
   # Raises error for missing translations
