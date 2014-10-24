@@ -9,5 +9,5 @@ class User < ActiveRecord::Base
     validates :password, length: { minimum: 6 }
   
 	@secret = ENV["SECRET_PASS"]
-	validates :admin_key, inclusion: { in: %w(@secret), message: "The key is incorrect" }	
+	validates :admin_key, inclusion: { in: @secret, message: "The key is incorrect" }	
 end
